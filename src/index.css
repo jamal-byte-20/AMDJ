@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --font-outfit: "Outfit", sans-serif;
+  --font-cairo: "Cairo", sans-serif;
+  --color-brand-green: #2a7f55;
+  --color-brand-darkgreen: #1f613e;
+  --color-brand-lightgreen: #e8f4ec;
+  --color-brand-teal: #0d3a3c;
+  --color-brand-darkteal: #061e20;
+  --color-brand-softbg: #fafcfa;
+  --color-brand-accent: #f0f7f2;
+}
+
+/* Custom base layer styles or custom scrollbar etc. */
+html, body {
+  scroll-behavior: smooth;
+}
+
+.font-outfit {
+  font-family: 'Outfit', sans-serif;
+}
+
+.font-cairo {
+  font-family: 'Cairo', sans-serif;
+}
+
+/* Custom background/borders or animations if needed */
+@keyframes pulseSlow {
+  0%, 100% { opacity: 0.9; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.02); }
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 3s infinite ease-in-out;
+}
